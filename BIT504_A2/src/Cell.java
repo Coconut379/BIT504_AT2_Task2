@@ -7,7 +7,7 @@ import java.awt.Graphics2D;
  * Represents a single cell on the Tic-Tac-Toe board.
  */
 public class Cell {
-    /** The content of this cell (Empty, Cross, or Nought). */
+    /** The content of this cell (Empty, Cross, or Naught). */
     Player content;
 
     /** The row and column position of this cell. */
@@ -44,7 +44,7 @@ public class Cell {
             int y2 = (row + 1) * GameMain.CELL_SIZE - GameMain.CELL_PADDING;
             graphic2D.drawLine(x1, y1, x2, y2);
             graphic2D.drawLine(x2, y1, x1, y2);
-        } else if (content == Player.Nought) {
+        } else if (content == Player.Naught) {
             graphic2D.setColor(Color.BLUE);
             graphic2D.drawOval(x1, y1, GameMain.SYMBOL_SIZE, GameMain.SYMBOL_SIZE);
         }

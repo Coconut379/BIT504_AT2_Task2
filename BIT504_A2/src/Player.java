@@ -5,5 +5,5 @@
 public enum Player {
     Empty,  // The cell is empty, no player's move
     Cross,  // The cell is occupied by player 'X'
-    Nought  // The cell is occupied by player 'O'
+    Naught  // The cell is occupied by player 'O'
 }

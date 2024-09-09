@@ -26,7 +26,7 @@ public class GameMain extends JPanel implements MouseListener {
     // Game objects
     private Board board;  // The game board
     private GameState currentState;  // The current state of the game (Playing, Draw, Won)
-    private Player currentPlayer;  // The current player (Cross or Nought)
+    private Player currentPlayer;  // The current player (Cross or Naught)
     private JLabel statusBar;  // Status bar to display game status messages
     
     /**
@@ -164,7 +164,7 @@ public class GameMain extends JPanel implements MouseListener {
                 updateGame(currentPlayer, rowSelected, colSelected);
 
                 // Switch player
-                currentPlayer = (currentPlayer == Player.Cross) ? Player.Nought : Player.Cross;
+                currentPlayer = (currentPlayer == Player.Cross) ? Player.Naught : Player.Cross;
             }
         } else {
             // Restart the game if it's over
